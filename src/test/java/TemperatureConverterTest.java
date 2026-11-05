@@ -1,0 +1,11 @@
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
+
+public class TemperatureConverterTest {
+
+    @Test
+    void TestCelsiusToFahrenheit () {
+        TemperatureConverter converter = new TemperatureConverter();
+        assertEquals(32.0, converter.celsiusToFahrenheit(0.0));
+    }
+}
