@@ -8,4 +8,10 @@ public class TemperatureConverterTest {
         TemperatureConverter converter = new TemperatureConverter();
         assertEquals(32.0, converter.celsiusToFahrenheit(0.0));
     }
+
+    @Test
+    void TestfahrenheitToCelsius() {
+        TemperatureConverter converter = new TemperatureConverter();
+        assertEquals(100.0, converter.fahrenheitToCelsius(212.0));
+    }
 }
